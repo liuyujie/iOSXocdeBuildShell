@@ -12,6 +12,7 @@ XcodeWorkSpace.sh
 
 此脚本参考自： 
 	
+	https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/xcodebuild.1.html
 	https://github.com/qindeli/WorksapceShell 
 	https://github.com/hades0918/ipapy
 
