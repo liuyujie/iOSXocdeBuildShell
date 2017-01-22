@@ -12,6 +12,9 @@ Configuration="Release"
 #IPA存放的地址
 IPA_Save_Path='~/Desktop/'${Project_Name}_$(date +%H%M%S).ipa
 
+EnterpriseExportOptionsPlist=./EnterprisePlist.plist
+EnterpriseExportOptionsPlist=${EnterpriseExportOptionsPlist}
+
 # 证书名 和 描述文件
 CODE_SIGN_IDENTITY="iPhone Distribution: *"
 # mobileprovision存放的地址（自定义）
@@ -19,4 +22,4 @@ PROVISIONING_PROFILE_NAME="/Users/mobileprovision/*.mobileprovision"
 
 # 打包并导出IPA
 xcodebuild -workspace $Workspace_Name.xcworkspace -scheme $Project_Name -configuration $Configuration -archivePath build/$Project_Name-build.xcarchive archive build CODE_SIGN_IDENTITY="${CODE_SIGN_IDENTITY}" PROVISIONING_PROFILE="${PROVISIONING_PROFILE_NAME}" PRODUCT_BUNDLE_IDENTIFIER="${AppBundleID}"
-xcodebuild -exportArchive -archivePath build/$Project_Name-build.xcarchive -exportPath $IPA_Save_Path
+xcodebuild -exportArchive -archivePath build/$Project_Name-build.xcarchive -exportOptionsPlist ${EnterpriseExportOptionsPlist} -exportPath $IPA_Save_Path

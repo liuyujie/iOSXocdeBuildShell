@@ -1,6 +1,6 @@
 # iOSXocdeBuildShell
 
-此为Shell脚本打包iOS APP的源码 特简单
+此为Shell脚本用**企业证书**打包iOS APP的源码 特简单
 
 XcodeNoWorkSpace.sh 
 
