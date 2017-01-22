@@ -10,7 +10,7 @@ AppBundleID="*.*.*"
 #配置环境，Release或者Debug,默认release
 Configuration="Release"
 #IPA存放的地址
-IPA_Save_Path='~/Desktop/'${Project_Name}_$(date +%I%M).ipa
+IPA_Save_Path='~/Desktop/'${Project_Name}_$(date +%H%M%S).ipa
 
 # 证书名 和 描述文件
 CODE_SIGN_IDENTITY="iPhone Distribution: *"
