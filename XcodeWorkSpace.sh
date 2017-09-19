@@ -1,4 +1,4 @@
-#!/bin/sh -vx
+#!/bin/bash
 #参考自 https://github.com/qindeli/WorksapceShell
 #注意：脚本和WorkSpace必须在同一个目录
 #工程名字(Target名字)
