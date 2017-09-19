@@ -4,7 +4,11 @@
 <dict>
 	<key>method</key>
 	<string>enterprise</string>
+	<key>teamID</key>
+	<string>1111111</string>
+	<key>compileBitcode</key>
+	<false/>
+	<key>uploadSymbols</key>
+	<false/>
 </dict>
 </plist>
-
-
