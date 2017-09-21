@@ -7,7 +7,7 @@ Project_Name="Project_Name"
 Xcodeproj_Name="Xcodeproj_Name"
 #Bundle ID
 AppBundleID="*.*.*"
-#配置环境，Release或者Debug,默认release
+#配置环境，Release或者Debug,默认Release
 Configuration="Release"
 #IPA存放的地址
 IPA_Save_Path="/Users/${USER}/Desktop/${Project_Name}"_$(date +%H%M%S)
