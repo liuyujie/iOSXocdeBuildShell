@@ -22,10 +22,9 @@ xcodebuild archive -workspace $Workspace_Name.xcworkspace -scheme $Project_Name 
 #导出IPA
 xcodebuild -exportArchive -archivePath build/$Project_Name-build.xcarchive -exportOptionsPlist "${EnterpriseExportOptionsPlist}" -exportPath $IPA_Save_Path
 
-PGY_UKEY="PGY_UKEY"
 PGY_APIKEY="PGY_APIKEY"
 
 #上传蒲公英pgyer
-curl -F "file=@${IPA_Save_Path}/${Project_Name}.ipa" -F "uKey=${PGY_UKEY}" -F "_api_key=${PGY_APIKEY}" https://qiniu-storage.pgyer.com/apiv1/app/upload
+curl -F "file=@${IPA_Save_Path}/${Project_Name}.ipa" -F "_api_key=${PGY_APIKEY}" https://www.pgyer.com/apiv2/app/upload
 
 rm -rf build
