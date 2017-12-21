@@ -23,3 +23,19 @@ XcodeWorkSpace.sh
 Jenkins+ Xcode+ 蒲公英 实现IOS自动化打包和分发
 
 	http://www.jianshu.com/p/371595ef08fe
+	
+	
+
+EnterprisePlist 参数说明：
+
+	method: (String) 可填写项如下:
+		development
+		app-store
+		enterprise
+		ad-hoc
+	
+	teamID: (String) The development program team identifier.
+	
+	uploadSymbols: (Boolean) Option to include symbols in the generated ipa file.
+	
+	uploadBitcode: (Boolean) Option to include Bitcode.
