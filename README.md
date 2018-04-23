@@ -39,3 +39,16 @@ EnterprisePlist 参数说明：
 	uploadSymbols: (Boolean) Option to include symbols in the generated ipa file.
 	
 	uploadBitcode: (Boolean) Option to include Bitcode.
+
+
+调用**Application Loader**上传 IPA 到 APPStore
+
+
+	# 验证并上传到App Store
+	# 将 -u 后面的XXX替换成自己的AppleID的账号，-p 后面的XXX替换成自己的密码
+	
+	altoolPath="/Applications/Xcode.app/Contents/Applications/Application Loader.app/Contents/Frameworks/ITunesSoftwareService.framework/Versions/A/Support/altool"
+	
+	"$altoolPath" --validate-app -f ${exportIpaPath}/${scheme_name}.ipa -u XXX -p XXX -t ios --output-format xml
+	
+	"$altoolPath" --upload-app -f ${exportIpaPath}/${scheme_name}.ipa -u  XXX -p XXX -t ios --output-format xml
