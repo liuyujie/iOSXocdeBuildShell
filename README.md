@@ -52,3 +52,8 @@ EnterprisePlist 参数说明：
 	"$altoolPath" --validate-app -f ${exportIpaPath}/${scheme_name}.ipa -u XXX -p XXX -t ios --output-format xml
 	
 	"$altoolPath" --upload-app -f ${exportIpaPath}/${scheme_name}.ipa -u  XXX -p XXX -t ios --output-format xml
+	
+	
+
+https://github.com/liuyujie/Andromeda
+
