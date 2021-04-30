@@ -1,0 +1,15 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform:ios, '13.0'
+
+inhibit_all_warnings!
+
+target 'SdImageDemo' do
+    pod 'AFNetworking'           						 	#网络请求
+    pod 'Masonry'                                       #自动布局
+    pod 'MBProgressHUD'                                 #HUD
+    pod 'MJRefresh'#, '3.2.3'                            #MJ刷新
+    pod 'MJExtension'                                   #MJ数据解析
+    pod 'SDWebImage'                     							#图片加载缓存
+		pod 'ProtocolServiceKit'
+end

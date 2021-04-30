@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71F1894F620252BE0E998490 /* libPods-SdImageDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E7D5044D38FC818B08F80B /* libPods-SdImageDemo.a */; };
+		E52CE0F225E89332004390EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E52CE0F125E89332004390EF /* AppDelegate.m */; };
+		E52CE0F525E89332004390EF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E52CE0F425E89332004390EF /* SceneDelegate.m */; };
+		E52CE0F825E89332004390EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E52CE0F725E89332004390EF /* ViewController.m */; };
+		E52CE0FB25E89332004390EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52CE0F925E89332004390EF /* Main.storyboard */; };
+		E52CE0FD25E89333004390EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52CE0FC25E89333004390EF /* Assets.xcassets */; };
+		E52CE10025E89333004390EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52CE0FE25E89333004390EF /* LaunchScreen.storyboard */; };
+		E52CE10325E89333004390EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E52CE10225E89333004390EF /* main.m */; };
+		E52CE11425E89A26004390EF /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E52CE11325E89A26004390EF /* TableViewController.m */; };
+		E5A3ABEC2632B15E009A0197 /* VideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A3ABEB2632B15E009A0197 /* VideoController.m */; };
+		E5A3ABF42632B656009A0197 /* AACEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A3ABF32632B656009A0197 /* AACEncoder.m */; };
+		E5A3ABF82632B6D0009A0197 /* H264Encoder.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A3ABF72632B6D0009A0197 /* H264Encoder.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C2ADAE244697765CE8F0051 /* Pods-SdImageDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SdImageDemo.debug.xcconfig"; path = "Target Support Files/Pods-SdImageDemo/Pods-SdImageDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CF3AF73FF3B0A0EA5484FC5B /* Pods-SdImageDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SdImageDemo.release.xcconfig"; path = "Target Support Files/Pods-SdImageDemo/Pods-SdImageDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E52CE0ED25E89332004390EF /* SdImageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SdImageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E52CE0F025E89332004390EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E52CE0F125E89332004390EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E52CE0F325E89332004390EF /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		E52CE0F425E89332004390EF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		E52CE0F625E89332004390EF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E52CE0F725E89332004390EF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E52CE0FA25E89332004390EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E52CE0FC25E89333004390EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E52CE0FF25E89333004390EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E52CE10125E89333004390EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E52CE10225E89333004390EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E52CE11225E89A26004390EF /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		E52CE11325E89A26004390EF /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		E5A3ABEA2632B15E009A0197 /* VideoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoController.h; sourceTree = "<group>"; };
+		E5A3ABEB2632B15E009A0197 /* VideoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoController.m; sourceTree = "<group>"; };
+		E5A3ABF22632B656009A0197 /* AACEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AACEncoder.h; sourceTree = "<group>"; };
+		E5A3ABF32632B656009A0197 /* AACEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AACEncoder.m; sourceTree = "<group>"; };
+		E5A3ABF62632B6D0009A0197 /* H264Encoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H264Encoder.h; sourceTree = "<group>"; };
+		E5A3ABF72632B6D0009A0197 /* H264Encoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = H264Encoder.m; sourceTree = "<group>"; };
+		F2E7D5044D38FC818B08F80B /* libPods-SdImageDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SdImageDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E52CE0EA25E89332004390EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71F1894F620252BE0E998490 /* libPods-SdImageDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B951F128F269D1F0A613558 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C2ADAE244697765CE8F0051 /* Pods-SdImageDemo.debug.xcconfig */,
+				CF3AF73FF3B0A0EA5484FC5B /* Pods-SdImageDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4ECF33B886EC904B83EACEFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2E7D5044D38FC818B08F80B /* libPods-SdImageDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E52CE0E425E89332004390EF = {
+			isa = PBXGroup;
+			children = (
+				E52CE0EF25E89332004390EF /* SdImageDemo */,
+				E52CE0EE25E89332004390EF /* Products */,
+				1B951F128F269D1F0A613558 /* Pods */,
+				4ECF33B886EC904B83EACEFB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E52CE0EE25E89332004390EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E52CE0ED25E89332004390EF /* SdImageDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E52CE0EF25E89332004390EF /* SdImageDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E52CE0F025E89332004390EF /* AppDelegate.h */,
+				E52CE0F125E89332004390EF /* AppDelegate.m */,
+				E52CE0F325E89332004390EF /* SceneDelegate.h */,
+				E52CE0F425E89332004390EF /* SceneDelegate.m */,
+				E52CE11225E89A26004390EF /* TableViewController.h */,
+				E52CE11325E89A26004390EF /* TableViewController.m */,
+				E52CE0F625E89332004390EF /* ViewController.h */,
+				E52CE0F725E89332004390EF /* ViewController.m */,
+				E5A3ABEA2632B15E009A0197 /* VideoController.h */,
+				E5A3ABEB2632B15E009A0197 /* VideoController.m */,
+				E5A3ABF22632B656009A0197 /* AACEncoder.h */,
+				E5A3ABF32632B656009A0197 /* AACEncoder.m */,
+				E5A3ABF62632B6D0009A0197 /* H264Encoder.h */,
+				E5A3ABF72632B6D0009A0197 /* H264Encoder.m */,
+				E52CE0F925E89332004390EF /* Main.storyboard */,
+				E52CE0FC25E89333004390EF /* Assets.xcassets */,
+				E52CE0FE25E89333004390EF /* LaunchScreen.storyboard */,
+				E52CE10125E89333004390EF /* Info.plist */,
+				E52CE10225E89333004390EF /* main.m */,
+			);
+			path = SdImageDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E52CE0EC25E89332004390EF /* SdImageDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E52CE10625E89333004390EF /* Build configuration list for PBXNativeTarget "SdImageDemo" */;
+			buildPhases = (
+				6D51EA140F1D72C22536E1BD /* [CP] Check Pods Manifest.lock */,
+				E52CE0E925E89332004390EF /* Sources */,
+				E52CE0EA25E89332004390EF /* Frameworks */,
+				E52CE0EB25E89332004390EF /* Resources */,
+				E3AB049C07C2A6CBF031D079 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SdImageDemo;
+			productName = SdImageDemo;
+			productReference = E52CE0ED25E89332004390EF /* SdImageDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E52CE0E525E89332004390EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					E52CE0EC25E89332004390EF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = E52CE0E825E89332004390EF /* Build configuration list for PBXProject "SdImageDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E52CE0E425E89332004390EF;
+			productRefGroup = E52CE0EE25E89332004390EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E52CE0EC25E89332004390EF /* SdImageDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E52CE0EB25E89332004390EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E52CE10025E89333004390EF /* LaunchScreen.storyboard in Resources */,
+				E52CE0FD25E89333004390EF /* Assets.xcassets in Resources */,
+				E52CE0FB25E89332004390EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D51EA140F1D72C22536E1BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SdImageDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3AB049C07C2A6CBF031D079 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SdImageDemo/Pods-SdImageDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SdImageDemo/Pods-SdImageDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SdImageDemo/Pods-SdImageDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E52CE0E925E89332004390EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E52CE0F825E89332004390EF /* ViewController.m in Sources */,
+				E52CE0F225E89332004390EF /* AppDelegate.m in Sources */,
+				E52CE10325E89333004390EF /* main.m in Sources */,
+				E5A3ABEC2632B15E009A0197 /* VideoController.m in Sources */,
+				E5A3ABF82632B6D0009A0197 /* H264Encoder.m in Sources */,
+				E5A3ABF42632B656009A0197 /* AACEncoder.m in Sources */,
+				E52CE11425E89A26004390EF /* TableViewController.m in Sources */,
+				E52CE0F525E89332004390EF /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E52CE0F925E89332004390EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E52CE0FA25E89332004390EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E52CE0FE25E89333004390EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E52CE0FF25E89333004390EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E52CE10425E89333004390EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E52CE10525E89333004390EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E52CE10725E89333004390EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C2ADAE244697765CE8F0051 /* Pods-SdImageDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2WXNU4WJJ9;
+				INFOPLIST_FILE = SdImageDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.didiyd.demo1.SdImageDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E52CE10825E89333004390EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF3AF73FF3B0A0EA5484FC5B /* Pods-SdImageDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2WXNU4WJJ9;
+				INFOPLIST_FILE = SdImageDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.didiyd.demo1.SdImageDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E52CE0E825E89332004390EF /* Build configuration list for PBXProject "SdImageDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E52CE10425E89333004390EF /* Debug */,
+				E52CE10525E89333004390EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E52CE10625E89333004390EF /* Build configuration list for PBXNativeTarget "SdImageDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E52CE10725E89333004390EF /* Debug */,
+				E52CE10825E89333004390EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E52CE0E525E89332004390EF /* Project object */;
+}
