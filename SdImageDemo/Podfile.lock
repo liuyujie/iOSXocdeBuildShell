@@ -15,10 +15,8 @@ PODS:
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
   - Masonry (1.1.0)
-  - MBProgressHUD (1.2.0)
   - MJExtension (3.2.4)
   - MJRefresh (3.5.0)
-  - ProtocolServiceKit (2.1.1)
   - SDWebImage (5.10.4):
     - SDWebImage/Core (= 5.10.4)
   - SDWebImage/Core (5.10.4)
@@ -26,31 +24,25 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - Masonry
-  - MBProgressHUD
   - MJExtension
   - MJRefresh
-  - ProtocolServiceKit
   - SDWebImage
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - AFNetworking
     - Masonry
-    - MBProgressHUD
     - MJExtension
     - MJRefresh
-    - ProtocolServiceKit
     - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJExtension: 88e0900751b6cac8de1cf724ca9838a0b28d5acb
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
-  ProtocolServiceKit: 471f6553cd87806e7cc770e46d90d8b1c9781c66
   SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
 
-PODFILE CHECKSUM: 562ed04df1fdda61effbc02c4a221174a0e8ac24
+PODFILE CHECKSUM: 40d81adbd6dac52ce77bf9a60de5cc6341aed645
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1
