@@ -12,8 +12,8 @@
     NSString *yuvFile;
     VTCompressionSessionRef EncodingSession;
     dispatch_queue_t aQueue;
-    CMFormatDescriptionRef format;
-    CMSampleTimingInfo *timingInfo;
+//    CMFormatDescriptionRef format;
+//    CMSampleTimingInfo *timingInfo;
     BOOL initialized;
     int frameCount;
     NSData *sps;
