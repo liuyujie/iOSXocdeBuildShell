@@ -81,10 +81,14 @@
 
 - (AVCaptureDevice *)cameraWithPosition:(AVCaptureDevicePosition)position
 {
-    NSArray *devices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];
-    for (AVCaptureDevice *device in devices) {
-        if (device.position == position) return device;
-    }
+    AVCaptureDeviceDiscoverySession *deviceDiscoverySession = [AVCaptureDeviceDiscoverySession discoverySessionWithDeviceTypes:@[AVCaptureDeviceTypeBuiltInWideAngleCamera] mediaType:AVMediaTypeVideo position:position];
+	NSArray *devices = deviceDiscoverySession.devices;
+	return devices.firstObject;
+	
+//    NSArray *devices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];
+//    for (AVCaptureDevice *device in devices) {
+//        if (device.position == position) return device;
+//    }
     return nil;
 }
 
@@ -152,7 +156,7 @@
 
     //Set landscape (if required)
     if ([_videoConnection isVideoOrientationSupported]) {
-        AVCaptureVideoOrientation orientation = AVCaptureVideoOrientationLandscapeRight;   
+        AVCaptureVideoOrientation orientation = AVCaptureVideoOrientationLandscapeRight;
         [_videoConnection setVideoOrientation:orientation];
     }
 
@@ -181,8 +185,7 @@
 {
     CMTime pts = CMSampleBufferGetPresentationTimeStamp(sampleBuffer);
     double dPTS = (double)(pts.value) / pts.timescale;
-
-//    NSLog(@"DPTS is %f",dPTS);
+    NSLog(@"DPTS is %f",dPTS);
 
     if (connection == _videoConnection) {
         [h264Encoder encode:sampleBuffer];
@@ -193,7 +196,7 @@
 
 #pragma mark
 #pragma mark -  音频数据(encodedData)
-                [_data appendData:encodedData];
+				[self->_data appendData:encodedData];
             } else {
                 NSLog(@"Error encoding AAC: %@", error);
             }

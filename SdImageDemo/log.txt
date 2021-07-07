@@ -1,0 +1,687 @@
+
+XCODEBUILD(1)             BSD General Commands Manual            XCODEBUILD(1)
+
+NNAAMMEE
+     xxccooddeebbuuiilldd -- build Xcode projects and workspaces
+
+SSYYNNOOPPSSIISS
+     xxccooddeebbuuiilldd [--pprroojjeecctt _n_a_m_e_._x_c_o_d_e_p_r_o_j]
+                [[--ttaarrggeett _t_a_r_g_e_t_n_a_m_e] ... | --aallllttaarrggeettss]
+                [--ccoonnffiigguurraattiioonn _c_o_n_f_i_g_u_r_a_t_i_o_n_n_a_m_e]
+                [--ssddkk [_s_d_k_f_u_l_l_p_a_t_h | _s_d_k_n_a_m_e]] [_a_c_t_i_o_n ...]
+                [_b_u_i_l_d_s_e_t_t_i_n_g=_v_a_l_u_e ...] [-_u_s_e_r_d_e_f_a_u_l_t=_v_a_l_u_e ...]
+
+     xxccooddeebbuuiilldd [--pprroojjeecctt _n_a_m_e_._x_c_o_d_e_p_r_o_j] --sscchheemmee _s_c_h_e_m_e_n_a_m_e
+                [[--ddeessttiinnaattiioonn _d_e_s_t_i_n_a_t_i_o_n_s_p_e_c_i_f_i_e_r] ...]
+                [--ddeessttiinnaattiioonn--ttiimmeeoouutt _v_a_l_u_e]
+                [--ccoonnffiigguurraattiioonn _c_o_n_f_i_g_u_r_a_t_i_o_n_n_a_m_e]
+                [--ssddkk [_s_d_k_f_u_l_l_p_a_t_h | _s_d_k_n_a_m_e]] [_a_c_t_i_o_n ...]
+                [_b_u_i_l_d_s_e_t_t_i_n_g=_v_a_l_u_e ...] [-_u_s_e_r_d_e_f_a_u_l_t=_v_a_l_u_e ...]
+
+     xxccooddeebbuuiilldd --wwoorrkkssppaaccee _n_a_m_e_._x_c_w_o_r_k_s_p_a_c_e --sscchheemmee _s_c_h_e_m_e_n_a_m_e
+                [[--ddeessttiinnaattiioonn _d_e_s_t_i_n_a_t_i_o_n_s_p_e_c_i_f_i_e_r] ...]
+                [--ddeessttiinnaattiioonn--ttiimmeeoouutt _v_a_l_u_e]
+                [--ccoonnffiigguurraattiioonn _c_o_n_f_i_g_u_r_a_t_i_o_n_n_a_m_e]
+                [--ssddkk [_s_d_k_f_u_l_l_p_a_t_h | _s_d_k_n_a_m_e]] [_a_c_t_i_o_n ...]
+                [_b_u_i_l_d_s_e_t_t_i_n_g=_v_a_l_u_e ...] [-_u_s_e_r_d_e_f_a_u_l_t=_v_a_l_u_e ...]
+
+     xxccooddeebbuuiilldd --vveerrssiioonn [--ssddkk [_s_d_k_f_u_l_l_p_a_t_h | _s_d_k_n_a_m_e]] [_i_n_f_o_i_t_e_m]
+
+     xxccooddeebbuuiilldd --sshhoowwssddkkss
+
+     xxccooddeebbuuiilldd --sshhoowwBBuuiillddSSeettttiinnggss
+                [--pprroojjeecctt _n_a_m_e_._x_c_o_d_e_p_r_o_j | [--wwoorrkkssppaaccee _n_a_m_e_._x_c_w_o_r_k_s_p_a_c_e --sscchheemmee _s_c_h_e_m_e_n_a_m_e]]
+
+     xxccooddeebbuuiilldd --sshhoowwddeessttiinnaattiioonnss
+                [--pprroojjeecctt _n_a_m_e_._x_c_o_d_e_p_r_o_j | [--wwoorrkkssppaaccee _n_a_m_e_._x_c_w_o_r_k_s_p_a_c_e --sscchheemmee _s_c_h_e_m_e_n_a_m_e]]
+
+     xxccooddeebbuuiilldd --sshhoowwTTeessttPPllaannss
+                [--pprroojjeecctt _n_a_m_e_._x_c_o_d_e_p_r_o_j | --wwoorrkkssppaaccee _n_a_m_e_._x_c_w_o_r_k_s_p_a_c_e]
+                --sscchheemmee _s_c_h_e_m_e_n_a_m_e
+
+     xxccooddeebbuuiilldd --lliisstt [--pprroojjeecctt _n_a_m_e_._x_c_o_d_e_p_r_o_j | --wwoorrkkssppaaccee _n_a_m_e_._x_c_w_o_r_k_s_p_a_c_e]
+
+     xxccooddeebbuuiilldd --eexxppoorrttAArrcchhiivvee --aarrcchhiivveePPaatthh _x_c_a_r_c_h_i_v_e_p_a_t_h --eexxppoorrttPPaatthh
+                _d_e_s_t_i_n_a_t_i_o_n_p_a_t_h --eexxppoorrttOOppttiioonnssPPlliisstt _p_a_t_h
+     xxccooddeebbuuiilldd --eexxppoorrttNNoottaarriizzeeddAApppp --aarrcchhiivveePPaatthh _x_c_a_r_c_h_i_v_e_p_a_t_h --eexxppoorrttPPaatthh
+                _d_e_s_t_i_n_a_t_i_o_n_p_a_t_h
+
+     xxccooddeebbuuiilldd --eexxppoorrttLLooccaalliizzaattiioonnss --pprroojjeecctt _n_a_m_e_._x_c_o_d_e_p_r_o_j --llooccaalliizzaattiioonnPPaatthh
+                _p_a_t_h [[--eexxppoorrttLLaanngguuaaggee _l_a_n_g_u_a_g_e] ...]
+     xxccooddeebbuuiilldd --iimmppoorrttLLooccaalliizzaattiioonnss --pprroojjeecctt _n_a_m_e_._x_c_o_d_e_p_r_o_j --llooccaalliizzaattiioonnPPaatthh
+                _p_a_t_h
+
+DDEESSCCRRIIPPTTIIOONN
+     xxccooddeebbuuiilldd builds one or more targets contained in an Xcode project, or
+     builds a scheme contained in an Xcode workspace or Xcode project.
+
+   UUssaaggee
+     To build an Xcode project, run xxccooddeebbuuiilldd from the directory containing
+     your project (i.e. the directory containing the _n_a_m_e_._x_c_o_d_e_p_r_o_j package).
+     If you have multiple projects in the this directory you will need to use
+     --pprroojjeecctt to indicate which project should be built.  By default,
+     xxccooddeebbuuiilldd builds the first target listed in the project, with the
+     default build configuration. The order of the targets is a property of
+     the project and is the same for all users of the project.
+
+     To build an Xcode workspace, you must pass both the --wwoorrkkssppaaccee and
+     --sscchheemmee options to define the build.  The parameters of the scheme will
+     control which targets are built and how they are built, although you may
+     pass other options to xxccooddeebbuuiilldd to override some parameters of the
+     scheme.
+
+     There are also several options that display info about the installed ver-
+     sion of Xcode or about projects or workspaces in the local directory, but
+     which do not initiate an action.  These include --lliisstt,
+     --sshhoowwBBuuiillddSSeettttiinnggss,, --sshhoowwddeessttiinnaattiioonnss,, --sshhoowwssddkkss, --sshhoowwTTeessttPPllaannss, --uussaaggee,
+     and --vveerrssiioonn.
+
+   OOppttiioonnss
+     --pprroojjeecctt _n_a_m_e_._x_c_o_d_e_p_r_o_j
+           Build the project _n_a_m_e_._x_c_o_d_e_p_r_o_j.  Required if there are multiple
+           project files in the same directory.
+
+     --ttaarrggeett _t_a_r_g_e_t_n_a_m_e
+           Build the target specified by _t_a_r_g_e_t_n_a_m_e.
+
+     --aallllttaarrggeettss
+           Build all the targets in the specified project.
+
+     --wwoorrkkssppaaccee _n_a_m_e_._x_c_w_o_r_k_s_p_a_c_e
+           Build the workspace _n_a_m_e_._x_c_w_o_r_k_s_p_a_c_e.
+
+     --sscchheemmee _s_c_h_e_m_e_n_a_m_e
+           Build the scheme specified by _s_c_h_e_m_e_n_a_m_e.  Required if building a
+           workspace.
+
+     --ddeessttiinnaattiioonn _d_e_s_t_i_n_a_t_i_o_n_s_p_e_c_i_f_i_e_r
+           Use the destination device described by _d_e_s_t_i_n_a_t_i_o_n_s_p_e_c_i_f_i_e_r.
+           Defaults to a destination that is compatible with the selected
+           scheme.  See the _D_e_s_t_i_n_a_t_i_o_n_s section below for more details.
+
+     --ddeessttiinnaattiioonn--ttiimmeeoouutt _t_i_m_e_o_u_t
+           Use the specified _t_i_m_e_o_u_t when searching for a destination device.
+           The default is 30 seconds.
+
+     --ccoonnffiigguurraattiioonn _c_o_n_f_i_g_u_r_a_t_i_o_n_n_a_m_e
+           Use the build configuration specified by _c_o_n_f_i_g_u_r_a_t_i_o_n_n_a_m_e when
+           building each target.
+
+     --aarrcchh _a_r_c_h_i_t_e_c_t_u_r_e
+           Use the architecture specified by _a_r_c_h_i_t_e_c_t_u_r_e when building each
+           target.
+
+     --ssddkk [_s_d_k_f_u_l_l_p_a_t_h | _s_d_k_n_a_m_e]
+           Build an Xcode project or workspace against the specified SDK,
+           using build tools appropriate for that SDK. The argument may be an
+           absolute path to an SDK, or the canonical name of an SDK.
+
+     --sshhoowwssddkkss
+           Lists all available SDKs that Xcode knows about, including their
+           canonical names suitable for use with --ssddkk.  Does not initiate a
+           build.
+
+     --sshhoowwBBuuiillddSSeettttiinnggss
+           Lists the build settings in a project or workspace and scheme. Does
+           not initiate a build. Use with --pprroojjeecctt or --wwoorrkkssppaaccee and --sscchheemmee..
+
+     --sshhoowwddeessttiinnaattiioonnss
+           Lists the valid destinations for a project or workspace and scheme.
+           Does not initiate a build. Use with --pprroojjeecctt or --wwoorrkkssppaaccee and
+           --sscchheemmee..
+
+     --sshhoowwBBuuiillddTTiimmiinnggSSuummmmaarryy
+           Display a report of the timings of all the commands invoked during
+           the build.
+
+     --sshhoowwTTeessttPPllaannss
+           Lists the test plans (if any) associated with the specified scheme.
+           Does not initiate a build. Use with --sscchheemmee.
+
+     --lliisstt
+           Lists the targets and configurations in a project, or the schemes
+           in a workspace. Does not initiate a build. Use with --pprroojjeecctt or
+           --wwoorrkkssppaaccee.
+
+     --eennaabblleeAAddddrreessssSSaanniittiizzeerr [_Y_E_S | _N_O]
+           Turns the address sanitizer on or off. This overrides the setting
+           for the launch action of a scheme in a workspace.
+
+     --eennaabblleeTThhrreeaaddSSaanniittiizzeerr [_Y_E_S | _N_O]
+           Turns the thread sanitizer on or off. This overrides the setting
+           for the launch action of a scheme in a workspace.
+
+     --eennaabblleeUUnnddeeffiinneeddBBeehhaavviioorrSSaanniittiizzeerr [_Y_E_S | _N_O]
+           Turns the undefined behavior sanitizer on or off. This overrides
+           the setting for the launch action of a scheme in a workspace.
+
+     --eennaabblleeCCooddeeCCoovveerraaggee [_Y_E_S | _N_O]
+           Turns code coverage on or off during testing. This overrides the
+           setting for the test action of a scheme in a workspace.
+
+     --tteessttLLaanngguuaaggee _l_a_n_g_u_a_g_e
+           Specifies ISO 639-1 language during testing. This overrides the
+           setting for the test action of a scheme in a workspace.
+
+     --tteessttRReeggiioonn _r_e_g_i_o_n
+           Specifies ISO 3166-1 region during testing. This overrides the set-
+           ting for the test action of a scheme in a workspace.
+
+     --ddeerriivveeddDDaattaaPPaatthh _p_a_t_h
+           Overrides the folder that should be used for derived data when per-
+           forming an action on a scheme in a workspace.
+
+     --rreessuullttBBuunnddlleePPaatthh _p_a_t_h
+           Writes a bundle to the specified _p_a_t_h with results from performing
+           an action on a scheme in a workspace. If the path already exists,
+           xcodebuild will exit with an error. Intermediate directories will
+           be created automatically. The bundle contains build logs, code cov-
+           erage reports, XML property lists with test results, screenshots
+           and other attachments collected during testing, and various diag-
+           nostic logs.
+
+     --aalllloowwPPrroovviissiioonniinnggUUppddaatteess
+           Allow xcodebuild to communicate with the Apple Developer website.
+           For automatically signed targets, xcodebuild will create and update
+           profiles, app IDs, and certificates. For manually signed targets,
+           xcodebuild will download missing or updated provisioning profiles.
+           Requires a developer account to have been added in Xcode's Accounts
+           preference pane.
+
+     --aalllloowwPPrroovviissiioonniinnggDDeevviicceeRReeggiissttrraattiioonn
+           Allow xcodebuild to register your destination device on the Apple
+           Developer website if necessary. Requires --aalllloowwPPrroovviissiioonniinnggUUppddaatteess.
+
+     --eexxppoorrttAArrcchhiivvee
+           Specifies that an archive should be distributed. Requires
+           --aarrcchhiivveePPaatthh and --eexxppoorrttOOppttiioonnssPPlliisstt.. For exporting, --eexxppoorrttPPaatthh is
+           also required. Cannot be passed along with an action.
+
+     --eexxppoorrttNNoottaarriizzeeddAApppp
+           Export an archive that has been notarized by Apple. Requires
+           --aarrcchhiivveePPaatthh and --eexxppoorrttPPaatthh..
+
+     --aarrcchhiivveePPaatthh _x_c_a_r_c_h_i_v_e_p_a_t_h
+           Specifies the path for the archive produced by the archive action,
+           or specifies the archive that should be exported when
+           --eexxppoorrttAArrcchhiivvee or --eexxppoorrttNNoottaarriizzeeddAApppp is passed.
+
+     --eexxppoorrttPPaatthh _d_e_s_t_i_n_a_t_i_o_n_p_a_t_h
+           Specifies the destination for the exported product, including the
+           name of the exported file.
+
+     --eexxppoorrttOOppttiioonnssPPlliisstt _p_a_t_h
+           Specifies options for --eexxppoorrttAArrcchhiivvee.  xxccooddeebbuuiilldd --hheellpp can print
+           the full set of available options.
+
+     --eexxppoorrttLLooccaalliizzaattiioonnss
+           Exports localizations to XLIFF files. Requires -project and -local-
+           izationPath. Cannot be passed along with an action.
+
+     --iimmppoorrttLLooccaalliizzaattiioonnss
+           Imports localizations from an XLIFF file. Requires -project and
+           -localizationPath. Cannot be passed along with an action.
+
+     --llooccaalliizzaattiioonnPPaatthh
+           Specifies a path to a directory or a single XLIFF localization
+           file.
+
+     --eexxppoorrttLLaanngguuaaggee _l_a_n_g_u_a_g_e
+           Specifies optional ISO 639-1 languages included in a localization
+           export. May be repeated to specify multiple languages. May be
+           excluded to specify an export includes only development language
+           strings.
+
+     _a_c_t_i_o_n ...
+           Specify one or more actions to perform. Available actions are:
+
+           build                  Build the target in the build root
+                                  (SYMROOT).  This is the default action, and
+                                  is used if no action is given.
+
+           build-for-testing      Build the target and associated tests in the
+                                  build root (SYMROOT).  This will also pro-
+                                  duce an xctestrun file in the build root.
+                                  This requires specifying a scheme.
+
+           analyze                Build and analyze a target or scheme from
+                                  the build root (SYMROOT).  This requires
+                                  specifying a scheme.
+
+           archive                Archive a scheme from the build root
+                                  (SYMROOT).  This requires specifying a
+                                  scheme.
+
+           test                   Test a scheme from the build root (SYMROOT).
+                                  This requires specifying a scheme and
+                                  optionally a destination.
+
+           test-without-building  Test compiled bundles. If a scheme is pro-
+                                  vided with --sscchheemmee then the command finds
+                                  bundles in the build root (SRCROOT).  If an
+                                  xctestrun file is provided with --xxcctteessttrruunn
+                                  then the command finds bundles at paths
+                                  specified in the xctestrun file.
+
+           installsrc             Copy the source of the project to the source
+                                  root (SRCROOT).
+
+           install                Build the target and install it into the
+                                  target's installation directory in the dis-
+                                  tribution root (DSTROOT).
+
+           clean                  Remove build products and intermediate files
+                                  from the build root (SYMROOT).
+
+     --xxccccoonnffiigg _f_i_l_e_n_a_m_e
+           Load the build settings defined in _f_i_l_e_n_a_m_e when building all tar-
+           gets.  These settings will override all other settings, including
+           settings passed individually on the command line.
+
+     --xxcctteessttrruunn _x_c_t_e_s_t_r_u_n_p_a_t_h
+           Specifies test run parameters. Can only be used with the
+           _t_e_s_t_-_w_i_t_h_o_u_t_-_b_u_i_l_d_i_n_g action. Cannot be used with --wwoorrkkssppaaccee or
+           --pprroojjeecctt.   See <x-man-page://5/xcodebuild.xctestrun> for file for-
+           mat details.
+
+     --tteessttPPllaann _t_e_s_t_-_p_l_a_n_-_n_a_m_e
+           Specifies which test plan associated with the scheme should be used
+           for  testing.  Pass  the  name  of the .xctestplan file without its
+           extension.
+
+     --sskkiipp--tteessttiinngg _t_e_s_t_-_i_d_e_n_t_i_f_i_e_r, --oonnllyy--tteessttiinngg _t_e_s_t_-_i_d_e_n_t_i_f_i_e_r
+           Constrain test  targets,  classes,  or  methods  in  test  actions.
+           --oonnllyy--tteessttiinngg  constrains a test action to only testing a specified
+           identifier, and excluding  all  other  identifiers.   --sskkiipp--tteessttiinngg
+           constrains  a  test  action to skip testing a specified identifier,
+           but including all other identifiers. Test identifiers have the form
+           TestTarget[/TestClass[/TestMethod]]. The TestTarget component of an
+           identifier is the name of a unit or UI testing bundle as  shown  in
+           the Test Navigator. An xxccooddeebbuuiilldd command can combine multiple con-
+           straint   options,   but   --oonnllyy--tteessttiinngg   has   precedence    over
+           --sskkiipp--tteessttiinngg.
+
+     --sskkiipp--tteesstt--ccoonnffiigguurraattiioonn                         _t_e_s_t_-_c_o_n_f_i_g_u_r_a_t_i_o_n_-_n_a_m_e,
+           --oonnllyy--tteesstt--ccoonnffiigguurraattiioonn _t_e_s_t_-_c_o_n_f_i_g_u_r_a_t_i_o_n_-_n_a_m_e
+           Constrain      test     configurations     in     test     actions.
+           --oonnllyy--tteesstt--ccoonnffiigguurraattiioonn constrains a test action to  only  test  a
+           specified  test  configuration  within a test plan, and exclude all
+           other test configurations.  --sskkiipp--tteesstt--ccoonnffiigguurraattiioonn  constrains  a
+           test action to skip a specified test configuration, but include all
+           other test configurations. Each test configuration name must  match
+           the  name  of a configuration specified in a test plan and is case-
+           sensitive. An xxccooddeebbuuiilldd command can  combine  multiple  constraint
+           options,   but   --oonnllyy--tteesstt--ccoonnffiigguurraattiioonn   has   precedence   over
+           --sskkiipp--tteesstt--ccoonnffiigguurraattiioonn.
+
+     --ddiissaabbllee--ccoonnccuurrrreenntt--ddeessttiinnaattiioonn--tteessttiinngg
+           Do not run tests on the specified  destinations  concurrently.  The
+           full  test  suite  will  run  to  completion on a given destination
+           before it begins on the next.
+
+     --mmaaxxiimmuumm--ccoonnccuurrrreenntt--tteesstt--ddeevviiccee--ddeessttiinnaattiioonnss _n_u_m_b_e_r
+           If   multiple    device    destinations    are    specified    (and
+           --ddiissaabbllee--ccoonnccuurrrreenntt--ddeessttiinnaattiioonn--tteessttiinngg  is  not passed), only test
+           on _n_u_m_b_e_r devices at a time. For example, if four iOS  devices  are
+           specified,  but  _n_u_m_b_e_r  is 2, the full test suite will run on each
+           device, but only two devices will be testing at a given time.
+
+     --mmaaxxiimmuumm--ccoonnccuurrrreenntt--tteesstt--ssiimmuullaattoorr--ddeessttiinnaattiioonnss _n_u_m_b_e_r
+           If   multiple   simulator   destinations   are    specified    (and
+           --ddiissaabbllee--ccoonnccuurrrreenntt--ddeessttiinnaattiioonn--tteessttiinngg  is  not passed), only test
+           on _n_u_m_b_e_r simulators at a time. For example, if four iOS simulators
+           are  specified,  but  _n_u_m_b_e_r  is 2, the full test suite will run on
+           each simulator, but only two simulators will be testing at a  given
+           time.
+
+     --ppaarraalllleell--tteessttiinngg--eennaabblleedd [_Y_E_S | _N_O]
+           Overrides the per-target setting in the scheme for running tests in
+           parallel.
+
+     --ppaarraalllleell--tteessttiinngg--wwoorrkkeerr--ccoouunntt _n_u_m_b_e_r
+           Spawn exactly _n_u_m_b_e_r test runners when executing tests in parallel.
+           Overrides --mmaaxxiimmuumm--ppaarraalllleell--tteessttiinngg--wwoorrkkeerrss, if it is specified.
+
+     --mmaaxxiimmuumm--ppaarraalllleell--tteessttiinngg--wwoorrkkeerrss _n_u_m_b_e_r
+           Limit  the number of test runners that will be spawned when running
+           tests in parallel to _n_u_m_b_e_r.
+
+     --ppaarraalllleelliizzee--tteessttss--aammoonngg--ddeessttiinnaattiioonnss
+           If    parallel    testing    is    enabled    (either    via    the
+           --ppaarraalllleell--tteessttiinngg--eennaabblleedd  option,  or on an individual test-target
+           basis) and multiple destination specifiers are  passed,  distribute
+           test  classes among the destinations, instead of running the entire
+           test suite on each destination (which is the default behavior  when
+           multiple destination specifiers are passed).
+
+     --tteesstt--ttiimmeeoouuttss--eennaabblleedd [_Y_E_S | _N_O]
+           Enable  or  disable  test timeout behavior. This value takes prece-
+           dence over the value specified in the test plan.
+
+     --ddeeffaauulltt--tteesstt--eexxeeccuuttiioonn--ttiimmee--aalllloowwaannccee _s_e_c_o_n_d_s
+           The default execution time an individual test is given to  execute,
+           if test timeouts are enabled.
+
+     --mmaaxxiimmuumm--tteesstt--eexxeeccuuttiioonn--ttiimmee--aalllloowwaannccee _s_e_c_o_n_d_s
+           The  maximum execution time an individual test is given to execute,
+           regardless of the test's preferred allowance.
+
+     --ddrryy--rruunn,, --nn
+           Print the commands that would be executed, but do not execute them.
+
+     --sskkiippUUnnaavvaaiillaabblleeAAccttiioonnss
+           Skip  actions  that  cannot  be  performed instead of failing. This
+           option is only honored if --sscchheemmee is passed.
+
+     _b_u_i_l_d_s_e_t_t_i_n_g=_v_a_l_u_e
+           Set the build setting _b_u_i_l_d_s_e_t_t_i_n_g to _v_a_l_u_e.
+
+           A detailed reference of Xcode build settings can be found at:
+           <https://help.apple.com/xcode/mac/current/#/itcaec37c2a6>
+
+     -_u_s_e_r_d_e_f_a_u_l_t=_v_a_l_u_e
+           Set the user default _u_s_e_r_d_e_f_a_u_l_t to _v_a_l_u_e.
+
+     --ttoooollcchhaaiinn [_i_d_e_n_t_i_f_i_e_r | _n_a_m_e]
+           Use a given toolchain, specified with either an _i_d_e_n_t_i_f_i_e_r or _n_a_m_e.
+
+     --qquuiieett
+           Do not print any output except for warnings and errors.
+
+     --vveerrbboossee
+           Provide additional status output.
+
+     --vveerrssiioonn
+           Display version information for this install  of  Xcode.  Does  not
+           initiate  a  build. When used in conjunction with --ssddkk, the version
+           of the specified SDK is displayed, or all SDKs if --ssddkk is given  no
+           argument.   Additionally,  a  single  line  of the reported version
+           information may be returned if _i_n_f_o_i_t_e_m is specified.
+
+     --lliicceennssee
+           Show the Xcode and SDK license agreements. Allows for accepting the
+           license  agreements without launching Xcode itself, which is useful
+           for headless systems. Must be run as a privileged user.
+
+     --cchheecckkFFiirrssttLLaauunncchhSSttaattuuss
+           Check if any First Launch tasks need to be performed.
+
+     --rruunnFFiirrssttLLaauunncchh
+           Install packages and agree to the license.
+
+     --uussaaggee
+           Displays usage information for xxccooddeebbuuiilldd.
+
+   DDeessttiinnaattiioonnss
+     The --ddeessttiinnaattiioonn option takes as its  argument  a  _d_e_s_t_i_n_a_t_i_o_n  _s_p_e_c_i_f_i_e_r
+     describing  the  device (or devices) to use as a destination.  A destina-
+     tion specifier is a single argument consisting of a  set  of  comma-sepa-
+     rated _k_e_y=_v_a_l_u_e pairs.  The --ddeessttiinnaattiioonn option may be specified multiple
+     times to cause xxccooddeebbuuiilldd to perform the  specified  action  on  multiple
+     destinations.
+
+     Destination specifiers may include the _p_l_a_t_f_o_r_m key to specify one of the
+     supported destination platforms.  There are additional keys which  should
+     be supplied depending on the platform of the device you are selecting.
+
+     Some  devices  may  take time to look up. The --ddeessttiinnaattiioonn--ttiimmeeoouutt option
+     can be used to specify the amount of time to wait before a device is con-
+     sidered  unavailable.  If unspecified, the default timeout is 30 seconds.
+
+     Currently, xxccooddeebbuuiilldd supports these platforms:
+
+     macOS              The local Mac, referred to in the Xcode  interface  as
+                        _M_y _M_a_c, and which supports the following key:
+
+                        _a_r_c_h     The  architecture  to use, either _x_8_6___6_4 (the
+                                 default) or _i_3_8_6.
+
+                        _v_a_r_i_a_n_t  The  optional  variant  to  use,  e.g.    _M_a_c
+                                 _C_a_t_a_l_y_s_t or _i_O_S.
+
+     iOS                An iOS device, which supports the following keys:
+
+                        _i_d    The identifier of the device to use, as shown in
+                              the Devices window. A valid  destination  speci-
+                              fier  must  provide  either  _i_d or _n_a_m_e, but not
+                              both.
+
+                        _n_a_m_e  The name of the device to use. A valid  destina-
+                              tion  specifier  must provide either _i_d or _n_a_m_e,
+                              but not both.
+
+     iOS Simulator      A simulated iOS device, which supports  the  following
+                        keys:
+
+                        _i_d    The  identifier  of the simulated device to use,
+                              as shown in the Devices window. A valid destina-
+                              tion  specifier  must provide either _i_d or _n_a_m_e,
+                              but not both.
+
+                        _n_a_m_e  The name of the simulated device to use. A valid
+                              destination  specifier must provide either _i_d or
+                              _n_a_m_e, but not both.
+
+                        _O_S    When specifying the simulated  device  by  _n_a_m_e,
+                              the  iOS version for that simulated device, such
+                              as _6_._0, or the string _l_a_t_e_s_t  (the  default)  to
+                              indicate  the  most  recent  version of iOS sup-
+                              ported by this version of Xcode.
+
+     watchOS            A watchOS app is  always  built  and  deployed  nested
+                        inside  of an iOS app. To use a watchOS device as your
+                        destination, specify a scheme which is  configured  to
+                        run  a WatchKit app, and specify the iOS platform des-
+                        tination that is paired with the  watchOS  device  you
+                        want to use.
+
+     watchOS Simulator  A  watchOS  Simulator app is always built and deployed
+                        nested inside of  an  iOS  Simulator  app.  To  use  a
+                        watchOS  Simulator device as your destination, specify
+                        a scheme which is configured to run  a  WatchKit  app,
+                        and  specify  the  iOS  Simulator platform destination
+                        that is paired with the watchOS Simulator  device  you
+                        want to use.
+
+     tvOS               A tvOS device, which supports the following keys:
+
+                        _i_d    The identifier of the device to use, as shown in
+                              the Devices window. A valid  destination  speci-
+                              fier  must  provide  either  _i_d or _n_a_m_e, but not
+                              both.
+
+                        _n_a_m_e  The name of the device to use. A valid  destina-
+                              tion  specifier  must provide either _i_d or _n_a_m_e,
+                              but not both.
+
+     tvOS Simulator     A simulated tvOS device, which supports the  following
+                        keys:
+
+                        _i_d    The  identifier  of the simulated device to use,
+                              as shown in the Devices window. A valid destina-
+                              tion  specifier  must provide either _i_d or _n_a_m_e,
+                              but not both.
+
+                        _n_a_m_e  The name of the simulated device to use. A valid
+                              destination  specifier must provide either _i_d or
+                              _n_a_m_e, but not both.
+
+                        _O_S    When specifying the simulated  device  by  _n_a_m_e,
+                              the tvOS version for that simulated device, such
+                              as _9_._0, or the string _l_a_t_e_s_t  (the  default)  to
+                              indicate  the  most  recent version of tvOS sup-
+                              ported by this version of Xcode.
+
+     Some actions (such as building) may be performed without an actual device
+     present.   To  build against a platform generically instead of a specific
+     device, the destination specifier  may  be  prefixed  with  the  optional
+     string "generic/", indicating that the platform should be targeted gener-
+     ically.  An example of a generic destination is the "Any iOS Device" des-
+     tination  displayed in Xcode's UI when no physical iOS device is present.
+
+   TTeessttiinngg oonn MMuullttiippllee DDeessttiinnaattiioonnss
+     When more than one destination is specified with the --ddeessttiinnaattiioonn option,
+     xxccooddeebbuuiilldd  tests  on  those  destinations  concurrently.  In  this mode,
+     xxccooddeebbuuiilldd automatically chooses the number  of  devices  and  simulators
+     that  are  used  simultaneously.  All  enabled  tests  in  the  scheme or
+     xctestrun file are run on each destination.
+
+   DDiissttrriibbuuttiinngg AArrcchhiivveess
+     The --eexxppoorrttAArrcchhiivvee option specifies that xxccooddeebbuuiilldd should distribute the
+     archive   specified  by  --aarrcchhiivveePPaatthh  using  the  options  specified  by
+     --eexxppoorrttOOppttiioonnssPPlliisstt.  xxccooddeebbuuiilldd --hheellpp can print the full set  of  avail-
+     able  inputs  to --eexxppoorrttOOppttiioonnssPPlliisstt.  The product can either be uploaded
+     to Apple or exported locally. The exported product will be placed at  the
+     path specified by --eexxppoorrttPPaatthh.
+
+     Archives  that have been uploaded to the Apple notary service can be dis-
+     tributed  using  the  --eexxppoorrttNNoottaarriizzeeddAApppp  option.  This  specifies  that
+     xxccooddeebbuuiilldd  should  export  a notarized app from the archive specified by
+     --aarrcchhiivveePPaatthh and place the exported product  at  the  path  specified  by
+     --eexxppoorrttPPaatthh.   If  the archive has not completed processing by the notary
+     service, or processing failed, then xxccooddeebbuuiilldd will exit and emit  infor-
+     mational or error messages.
+
+     When uploading an archive using the --eexxppoorrttAArrcchhiivvee option, or exporting a
+     notarized archive using  the  --eexxppoorrttNNoottaarriizzeeddAApppp  option,  an  Apple  ID
+     account  belonging  to  the archive's development team is required. Enter
+     the credentials for the Apple ID account using Xcode's  Accounts  prefer-
+     ence pane before invoking xxccooddeebbuuiilldd.
+
+   EEnnvviirroonnmmeenntt VVaarriiaabblleess
+     The following environment variables affect the execution of xxccooddeebbuuiilldd:
+
+     XCODE_XCCONFIG_FILE
+                     Set to a path to a file, build settings in that file will
+                     be loaded and used when building all targets.  These set-
+                     tings  will  override  all other settings, including set-
+                     tings passed individually on the command line, and  those
+                     in the file passed with the --xxccccoonnffiigg option.
+
+   EExxiitt CCooddeess
+     xxccooddeebbuuiilldd  exits  with  codes defined by sysexits(3).  It will exit with
+     EEXX__OOKK on success.  On failure, it will commonly exit with EEXX__UUSSAAGGEE if any
+     options  appear malformed, EEXX__NNOOIINNPPUUTT if any input files cannot be found,
+     EEXX__IIOOEERRRR if any files cannot be read or written, and EEXX__SSOOFFTTWWAARREE  if  the
+     commands  given to xcodebuild fail.  It may exit with other codes in less
+     common scenarios.
+
+EEXXAAMMPPLLEESS
+     xcodebuild clean install
+
+              Cleans the build directory; then builds and installs the first
+              target in the Xcode project in the directory from which
+              xxccooddeebbuuiilldd was started.
+
+     xcodebuild -project MyProject.xcodeproj -target Target1 -target Target2
+              -configuration Debug
+
+              Builds the targets _T_a_r_g_e_t_1 and _T_a_r_g_e_t_2 in the project
+              _M_y_P_r_o_j_e_c_t_._x_c_o_d_e_p_r_o_j using the _D_e_b_u_g configuration.
+
+     xcodebuild -target MyTarget OBJROOT=/Build/MyProj/Obj.root
+              SYMROOT=/Build/MyProj/Sym.root
+
+              Builds the target _M_y_T_a_r_g_e_t in the Xcode project in the directory
+              from which xxccooddeebbuuiilldd was started, putting intermediate files in
+              the directory _/_B_u_i_l_d_/_M_y_P_r_o_j_/_O_b_j_._r_o_o_t and the products of the
+              build in the directory _/_B_u_i_l_d_/_M_y_P_r_o_j_/_S_y_m_._r_o_o_t.
+
+     xcodebuild -sdk macosx10.6
+
+              Builds the Xcode project in the directory from which xxccooddeebbuuiilldd
+              was started against the macOS 10.6 SDK.  The canonical names of
+              all available SDKs can be viewed using the --sshhoowwssddkkss option.
+
+     xcodebuild -workspace MyWorkspace.xcworkspace -scheme MyScheme
+
+              Builds the scheme _M_y_S_c_h_e_m_e in the Xcode workspace
+              _M_y_W_o_r_k_s_p_a_c_e_._x_c_w_o_r_k_s_p_a_c_e.
+
+     xcodebuild archive -workspace MyWorkspace.xcworkspace -scheme MyScheme
+
+              Archives the scheme _M_y_S_c_h_e_m_e in the Xcode workspace
+              _M_y_W_o_r_k_s_p_a_c_e_._x_c_w_o_r_k_s_p_a_c_e.
+
+     xcodebuild build-for-testing -workspace MyWorkspace.xcworkspace -scheme
+              MyScheme -destination generic/platform=iOS
+
+              Build tests and associated targets in the scheme _M_y_S_c_h_e_m_e in the
+              Xcode workspace _M_y_W_o_r_k_s_p_a_c_e_._x_c_w_o_r_k_s_p_a_c_e using the generic iOS
+              device destination. The command also writes test parameters from
+              the scheme to an xctestrun file in the built products directory.
+
+     xcodebuild test-without-building -workspace MyWorkspace.xcworkspace
+              -scheme MyScheme -destination 'platform=iOS
+              Simulator,name=iPhone 5s' -destination 'platform=iOS,name=My
+              iPad'
+
+              Tests the scheme _M_y_S_c_h_e_m_e in the Xcode workspace
+              _M_y_W_o_r_k_s_p_a_c_e_._x_c_w_o_r_k_s_p_a_c_e using both the iOS Simulator and the
+              device named _i_P_h_o_n_e _5_s for the latest version of iOS. The com-
+              mand assumes the test bundles are in the build root (SYMROOT).
+              (Note that the shell requires arguments to be quoted or other-
+              wise escaped if they contain spaces.)
+
+     xcodebuild test-without-building -xctestrun MyTestRun.xctestrun
+              -destination 'platform=iOS Simulator,name=iPhone 5s'
+              -destination 'platform=iOS,name=My iPad'
+
+              Tests using both the iOS Simulator and the device named _i_P_h_o_n_e
+              _5_s.  Test bundle paths and other test parameters are specified
+              in _M_y_T_e_s_t_R_u_n_._x_c_t_e_s_t_r_u_n.  The command requires project binaries
+              and does not require project source code.
+
+     xcodebuild test -workspace MyWorkspace.xcworkspace -scheme MyScheme
+              -destination 'platform=macOS,arch=x86_64'
+
+              Tests the scheme _M_y_S_c_h_e_m_e in the Xcode workspace
+              _M_y_W_o_r_k_s_p_a_c_e_._x_c_w_o_r_k_s_p_a_c_e using the destination described as _M_y
+              _M_a_c _6_4_-_b_i_t in Xcode.
+
+     xcodebuild test -workspace MyWorkspace.xcworkspace -scheme MyScheme
+              -destination 'platform=macOS,arch=x86_64' -only-testing
+              MyTests/FooTests/testFooWithBar
+
+              Tests the scheme _M_y_S_c_h_e_m_e in the Xcode workspace
+              _M_y_W_o_r_k_s_p_a_c_e_._x_c_w_o_r_k_s_p_a_c_e using the destination described as _M_y
+              _M_a_c _6_4_-_b_i_t in Xcode. Only the test _t_e_s_t_F_o_o_W_i_t_h_B_a_r of the test
+              suite _F_o_o_T_e_s_t_s_, part of the _M_y_T_e_s_t_s testing bundle target, will
+              be run.
+
+     xcodebuild -exportArchive -archivePath MyMobileApp.xcarchive -exportPath
+              ExportDestination -exportOptionsPlist 'export.plist'
+
+              Exports the archive _M_y_M_o_b_i_l_e_A_p_p_._x_c_a_r_c_h_i_v_e to the path
+              _E_x_p_o_r_t_D_e_s_t_i_n_a_t_i_o_n using the options specified in _e_x_p_o_r_t_._p_l_i_s_t.
+
+     xcodebuild -exportLocalizations -project MyProject.xcodeproj
+              -localizationPath MyDirectory -exportLanguage zh-hans
+              -exportLanguage es-MX
+
+              Exports two XLIFF files to _M_y_D_i_r_e_c_t_o_r_y from _M_y_P_r_o_j_e_c_t_._x_c_o_d_e_p_r_o_j
+              containing development language strings and translations for
+              Simplified Chinese and Mexican Spanish.
+
+     xcodebuild -exportLocalizations -project MyProject.xcodeproj
+              -localizationPath MyDirectory
+
+              Export a single XLIFF file to _M_y_D_i_r_e_c_t_o_r_y from
+              _M_y_P_r_o_j_e_c_t_._x_c_o_d_e_p_r_o_j containing only development language
+              strings. (In this case, the --eexxppoorrttLLaanngguuaaggee parameter has been
+              excluded.)
+
+     xcodebuild -importLocalizations -project MyProject.xcodeproj
+              -localizationPath MyLocalizations.xliff
+
+              Imports localizations from _M_y_L_o_c_a_l_i_z_a_t_i_o_n_s_._x_l_i_f_f into
+              _M_y_P_r_o_j_e_c_t_._x_c_o_d_e_p_r_o_j.  Translations with issues will be reported
+              but not imported.
+
+SSEEEE AALLSSOO
+     ibtool(1), sysexits(3), xcode-select(1), xcrun(1), xed(1)
+
+     XXccooddee BBuuiillddss SSeettttiinnggss RReeffeerreennccee <https://help.apple.com/xcode/mac/
+     current/#/itcaec37c2a6>
+
+macOS                            June 20, 2016                           macOS

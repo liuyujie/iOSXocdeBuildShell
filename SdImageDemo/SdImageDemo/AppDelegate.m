@@ -16,7 +16,34 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	// Override point for customization after application launch.
+    
+    [self tomTest];
 	return YES;
+}
+
+- (void)tomTest
+{
+    dispatch_queue_t concurrentQueue = dispatch_queue_create("test", DISPATCH_QUEUE_CONCURRENT);
+
+    for (NSInteger i = 0; i < 10; i++) {
+        dispatch_async(concurrentQueue, ^{
+            NSLog(@"%zd - %@", i,[NSThread currentThread]);
+        });
+    }
+
+    dispatch_barrier_sync(concurrentQueue, ^{
+        NSLog(@"barrier  - %@",[NSThread currentThread]);
+    });
+
+    NSLog(@"主线程执行东西- %@",[NSThread currentThread]);
+
+    
+    for (NSInteger i = 10; i < 20; i++) {
+        dispatch_async(concurrentQueue, ^{
+            NSLog(@"%zd - %@", i,[NSThread currentThread]);
+        });
+    }
+    
 }
 
 

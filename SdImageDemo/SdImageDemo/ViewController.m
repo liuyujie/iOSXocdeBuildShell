@@ -29,18 +29,18 @@
     [super viewDidLoad];
     [self initSubViews];
 
-    dispatch_queue_t globQueue = dispatch_queue_create("aa", DISPATCH_QUEUE_SERIAL);
-
-    __block NSInteger a = 0;
-
-    while (a < 5) {
-        dispatch_async(globQueue, ^{
-            a++;
-            NSLog(@"内部：%ld, - %@", a, [NSThread currentThread]);
-        });
-    }
-
-    NSLog(@"外部打印：%ld", a);
+//    dispatch_queue_t globQueue = dispatch_queue_create("aa", DISPATCH_QUEUE_SERIAL);
+//
+//    __block NSInteger a = 0;
+//
+//    while (a < 5) {
+//        dispatch_async(globQueue, ^{
+//            a++;
+//            NSLog(@"内部：%ld, - %@", a, [NSThread currentThread].name);
+//        });
+//    }
+//
+//    NSLog(@"外部打印：%ld", a);
 }
 
 - (void)initSubViews
