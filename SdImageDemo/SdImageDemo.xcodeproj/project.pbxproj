@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		272F7AC026998B9100A83752 /* GDThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 272F7ABF26998B9100A83752 /* GDThread.m */; };
 		71F1894F620252BE0E998490 /* libPods-SdImageDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E7D5044D38FC818B08F80B /* libPods-SdImageDemo.a */; };
 		E52CE0F225E89332004390EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E52CE0F125E89332004390EF /* AppDelegate.m */; };
 		E52CE0F525E89332004390EF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E52CE0F425E89332004390EF /* SceneDelegate.m */; };
@@ -23,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		0C2ADAE244697765CE8F0051 /* Pods-SdImageDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SdImageDemo.debug.xcconfig"; path = "Target Support Files/Pods-SdImageDemo/Pods-SdImageDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		272F7ABE26998B9100A83752 /* GDThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDThread.h; sourceTree = "<group>"; };
+		272F7ABF26998B9100A83752 /* GDThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDThread.m; sourceTree = "<group>"; };
 		CF3AF73FF3B0A0EA5484FC5B /* Pods-SdImageDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SdImageDemo.release.xcconfig"; path = "Target Support Files/Pods-SdImageDemo/Pods-SdImageDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E52CE0ED25E89332004390EF /* SdImageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SdImageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52CE0F025E89332004390EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,6 +109,8 @@
 				E52CE0F625E89332004390EF /* ViewController.h */,
 				E52CE0F725E89332004390EF /* ViewController.m */,
 				E5A3ABEA2632B15E009A0197 /* VideoController.h */,
+				272F7ABE26998B9100A83752 /* GDThread.h */,
+				272F7ABF26998B9100A83752 /* GDThread.m */,
 				E5A3ABEB2632B15E009A0197 /* VideoController.m */,
 				E5A3ABF22632B656009A0197 /* AACEncoder.h */,
 				E5A3ABF32632B656009A0197 /* AACEncoder.m */,
@@ -240,6 +245,7 @@
 				E5A3ABF82632B6D0009A0197 /* H264Encoder.m in Sources */,
 				E5A3ABF42632B656009A0197 /* AACEncoder.m in Sources */,
 				E52CE11425E89A26004390EF /* TableViewController.m in Sources */,
+				272F7AC026998B9100A83752 /* GDThread.m in Sources */,
 				E52CE0F525E89332004390EF /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
