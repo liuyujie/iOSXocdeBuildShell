@@ -1,0 +1,80 @@
+PODS:
+  - Alamofire (5.4.3)
+  - KafkaRefresh (1.5.0):
+    - KafkaRefresh/Category (= 1.5.0)
+    - KafkaRefresh/Configuration (= 1.5.0)
+    - KafkaRefresh/Core (= 1.5.0)
+    - KafkaRefresh/Default (= 1.5.0)
+    - KafkaRefresh/Style (= 1.5.0)
+    - KafkaRefresh/UIKit (= 1.5.0)
+  - KafkaRefresh/Category (1.5.0)
+  - KafkaRefresh/Configuration (1.5.0):
+    - KafkaRefresh/UIKit/FootKit
+    - KafkaRefresh/UIKit/HeadKit
+  - KafkaRefresh/Core (1.5.0):
+    - KafkaRefresh/Category
+  - KafkaRefresh/Default (1.5.0):
+    - KafkaRefresh/Style
+  - KafkaRefresh/Style (1.5.0)
+  - KafkaRefresh/UIKit (1.5.0):
+    - KafkaRefresh/UIKit/FootKit (= 1.5.0)
+    - KafkaRefresh/UIKit/HeadKit (= 1.5.0)
+    - KafkaRefresh/UIKit/LayerKit (= 1.5.0)
+  - KafkaRefresh/UIKit/FootKit (1.5.0):
+    - KafkaRefresh/Category
+    - KafkaRefresh/Core
+    - KafkaRefresh/Default
+    - KafkaRefresh/Style
+    - KafkaRefresh/UIKit/LayerKit
+  - KafkaRefresh/UIKit/HeadKit (1.5.0):
+    - KafkaRefresh/Category
+    - KafkaRefresh/Core
+    - KafkaRefresh/Default
+    - KafkaRefresh/Style
+    - KafkaRefresh/UIKit/LayerKit
+  - KafkaRefresh/UIKit/LayerKit (1.5.0):
+    - KafkaRefresh/Category
+    - KafkaRefresh/Default
+  - Kingfisher (6.3.1)
+  - ObjectMapper (4.2.0)
+  - RxCocoa (6.2.0):
+    - RxRelay (= 6.2.0)
+    - RxSwift (= 6.2.0)
+  - RxRelay (6.2.0):
+    - RxSwift (= 6.2.0)
+  - RxSwift (6.2.0)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - KafkaRefresh
+  - Kingfisher
+  - ObjectMapper
+  - RxCocoa
+  - RxSwift
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - KafkaRefresh
+    - Kingfisher
+    - ObjectMapper
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  KafkaRefresh: 01645b1509b8647809f6bb666629c80855bd3fdd
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
+  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 8d0d9d8ea234de53ab8bd1858f22fbf0fec3150e
+
+COCOAPODS: 1.10.2

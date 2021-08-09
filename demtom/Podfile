@@ -1,0 +1,16 @@
+source 'https://cdn.cocoapods.org/'
+
+platform:ios, '13.0'
+
+inhibit_all_warnings!
+
+target 'demtom' do
+    pod 'Alamofire'           						 	#网络请求
+    pod 'SnapKit'                                       #自动布局
+    pod 'KafkaRefresh'
+    pod 'ObjectMapper'                                   #MJ数据解析
+    pod 'Kingfisher'                     							#图片加载缓存
+    pod 'Kingfisher'                     							#图片加载缓存
+    pod 'RxSwift'                     							#图片加载缓存
+    pod 'RxCocoa'                     							#图片加载缓存
+end

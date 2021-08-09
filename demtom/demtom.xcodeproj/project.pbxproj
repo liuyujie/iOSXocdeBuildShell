@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7930D8E905B3A9615DCD9448 /* libPods-demtom.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C77DB193E25526745D021AA /* libPods-demtom.a */; };
+		E500B23826BD0147003B5315 /* JSONData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E500B23726BD0147003B5315 /* JSONData.swift */; };
+		E5203DD8265F9047005173C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5203DD7265F9047005173C0 /* AppDelegate.swift */; };
+		E5203DDA265F9047005173C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5203DD9265F9047005173C0 /* SceneDelegate.swift */; };
+		E5203DDC265F9047005173C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5203DDB265F9047005173C0 /* ViewController.swift */; };
+		E5203DDF265F9047005173C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5203DDD265F9047005173C0 /* Main.storyboard */; };
+		E5203DE1265F9048005173C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5203DE0265F9048005173C0 /* Assets.xcassets */; };
+		E5203DE4265F9048005173C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5203DE2265F9048005173C0 /* LaunchScreen.storyboard */; };
+		E5203DEC2660DA55005173C0 /* Mems.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5203DEB2660DA55005173C0 /* Mems.swift */; };
+		E5203DEE2665C48D005173C0 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5203DED2665C48D005173C0 /* Point.swift */; };
+		E5203DF0266F7994005173C0 /* RVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5203DEF266F7994005173C0 /* RVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00DF0CE35FB2D2906F1D6F4C /* Pods-demtom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demtom.release.xcconfig"; path = "Target Support Files/Pods-demtom/Pods-demtom.release.xcconfig"; sourceTree = "<group>"; };
+		2C77DB193E25526745D021AA /* libPods-demtom.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-demtom.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7312FDF323CE57C96C6C04F9 /* Pods-demtom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demtom.debug.xcconfig"; path = "Target Support Files/Pods-demtom/Pods-demtom.debug.xcconfig"; sourceTree = "<group>"; };
+		E500B23726BD0147003B5315 /* JSONData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONData.swift; sourceTree = "<group>"; };
+		E5203DD4265F9047005173C0 /* demtom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demtom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5203DD7265F9047005173C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E5203DD9265F9047005173C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E5203DDB265F9047005173C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E5203DDE265F9047005173C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E5203DE0265F9048005173C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E5203DE3265F9048005173C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E5203DE5265F9048005173C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5203DEB2660DA55005173C0 /* Mems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mems.swift; sourceTree = "<group>"; };
+		E5203DED2665C48D005173C0 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		E5203DEF266F7994005173C0 /* RVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5203DD1265F9047005173C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7930D8E905B3A9615DCD9448 /* libPods-demtom.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14CA91FB17878B86BEFF7E09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7312FDF323CE57C96C6C04F9 /* Pods-demtom.debug.xcconfig */,
+				00DF0CE35FB2D2906F1D6F4C /* Pods-demtom.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E5203DCB265F9047005173C0 = {
+			isa = PBXGroup;
+			children = (
+				E5203DD6265F9047005173C0 /* demtom */,
+				E5203DD5265F9047005173C0 /* Products */,
+				14CA91FB17878B86BEFF7E09 /* Pods */,
+				E9B13BEF53C6CB146C933D77 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E5203DD5265F9047005173C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5203DD4265F9047005173C0 /* demtom.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5203DD6265F9047005173C0 /* demtom */ = {
+			isa = PBXGroup;
+			children = (
+				E5203DD7265F9047005173C0 /* AppDelegate.swift */,
+				E500B23726BD0147003B5315 /* JSONData.swift */,
+				E5203DD9265F9047005173C0 /* SceneDelegate.swift */,
+				E5203DDB265F9047005173C0 /* ViewController.swift */,
+				E5203DEF266F7994005173C0 /* RVC.swift */,
+				E5203DED2665C48D005173C0 /* Point.swift */,
+				E5203DEB2660DA55005173C0 /* Mems.swift */,
+				E5203DDD265F9047005173C0 /* Main.storyboard */,
+				E5203DE0265F9048005173C0 /* Assets.xcassets */,
+				E5203DE2265F9048005173C0 /* LaunchScreen.storyboard */,
+				E5203DE5265F9048005173C0 /* Info.plist */,
+			);
+			path = demtom;
+			sourceTree = "<group>";
+		};
+		E9B13BEF53C6CB146C933D77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C77DB193E25526745D021AA /* libPods-demtom.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5203DD3265F9047005173C0 /* demtom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5203DE8265F9048005173C0 /* Build configuration list for PBXNativeTarget "demtom" */;
+			buildPhases = (
+				56E033AE298107ADC1A1B11F /* [CP] Check Pods Manifest.lock */,
+				E5203DD0265F9047005173C0 /* Sources */,
+				E5203DD1265F9047005173C0 /* Frameworks */,
+				E5203DD2265F9047005173C0 /* Resources */,
+				626D14922EE226E6C9747F1D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = demtom;
+			productName = demtom;
+			productReference = E5203DD4265F9047005173C0 /* demtom.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5203DCC265F9047005173C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					E5203DD3265F9047005173C0 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = E5203DCF265F9047005173C0 /* Build configuration list for PBXProject "demtom" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E5203DCB265F9047005173C0;
+			productRefGroup = E5203DD5265F9047005173C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5203DD3265F9047005173C0 /* demtom */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5203DD2265F9047005173C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5203DE4265F9048005173C0 /* LaunchScreen.storyboard in Resources */,
+				E5203DE1265F9048005173C0 /* Assets.xcassets in Resources */,
+				E5203DDF265F9047005173C0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56E033AE298107ADC1A1B11F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-demtom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		626D14922EE226E6C9747F1D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-demtom/Pods-demtom-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-demtom/Pods-demtom-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-demtom/Pods-demtom-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5203DD0265F9047005173C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5203DDC265F9047005173C0 /* ViewController.swift in Sources */,
+				E5203DEE2665C48D005173C0 /* Point.swift in Sources */,
+				E5203DD8265F9047005173C0 /* AppDelegate.swift in Sources */,
+				E5203DDA265F9047005173C0 /* SceneDelegate.swift in Sources */,
+				E5203DEC2660DA55005173C0 /* Mems.swift in Sources */,
+				E500B23826BD0147003B5315 /* JSONData.swift in Sources */,
+				E5203DF0266F7994005173C0 /* RVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E5203DDD265F9047005173C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5203DDE265F9047005173C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E5203DE2265F9048005173C0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5203DE3265F9048005173C0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E5203DE6265F9048005173C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E5203DE7265F9048005173C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5203DE9265F9048005173C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7312FDF323CE57C96C6C04F9 /* Pods-demtom.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2WXNU4WJJ9;
+				INFOPLIST_FILE = demtom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.didiyd.demo2.demtom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E5203DEA265F9048005173C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00DF0CE35FB2D2906F1D6F4C /* Pods-demtom.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2WXNU4WJJ9;
+				INFOPLIST_FILE = demtom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.didiyd.demo2.demtom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E5203DCF265F9047005173C0 /* Build configuration list for PBXProject "demtom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5203DE6265F9048005173C0 /* Debug */,
+				E5203DE7265F9048005173C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5203DE8265F9048005173C0 /* Build configuration list for PBXNativeTarget "demtom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5203DE9265F9048005173C0 /* Debug */,
+				E5203DEA265F9048005173C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E5203DCC265F9047005173C0 /* Project object */;
+}

@@ -29,8 +29,11 @@ xcodebuild -workspace $Workspace_Name.xcworkspace -scheme $Project_Name -configu
 # 导出IPA
 xcodebuild -exportArchive -archivePath build/$Project_Name-build.xcarchive -exportOptionsPlist ${PlistPath} -exportPath $IPA_Save_Path -allowProvisioningUpdates YES
 
+# 获取更新日志
 # git log -2 --pretty=format:"%H %s" > build/log.log
 
+# 复制 dSYMs 文件
+cp -R build/$Project_Name-build.xcarchive/dSYMs $IPA_Save_Path
 # 上传到fir.im
 fir publish ${IPA_Save_Path}/${IPA_Name}.ipa -c $1 --skip_update_icon
 
